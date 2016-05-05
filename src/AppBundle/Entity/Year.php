@@ -8,7 +8,6 @@ use Doctrine\ORM\Mapping as ORM;
  * Year
  *
  * @ORM\Table(name="year")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\YearRepository")
  */
 class Year
 {
