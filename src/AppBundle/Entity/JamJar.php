@@ -22,6 +22,13 @@ class JamJar
     private $id;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="comment", type="string", length=255, nullable=true)
+     */
+    private $comment;
+
+    /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Type", inversedBy="jamJar")
      * @ORM\JoinColumn(name="type_id", referencedColumnName="id")
      */
@@ -88,5 +95,29 @@ class JamJar
     public function getYear()
     {
         return $this->year;
+    }
+
+    /**
+     * Set comment
+     *
+     * @param string $comment
+     *
+     * @return JamJar
+     */
+    public function setComment($comment)
+    {
+        $this->comment = $comment;
+
+        return $this;
+    }
+
+    /**
+     * Get comment
+     *
+     * @return string
+     */
+    public function getComment()
+    {
+        return $this->comment;
     }
 }

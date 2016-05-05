@@ -29,7 +29,7 @@ class Year
     private $name;
     
     /**
-     * @ORM\OneToMany(targetEntity="JamJar", mappedBy="type")
+     * @ORM\OneToMany(targetEntity="JamJar", mappedBy="year")
      */
     private $jamJar;
 
