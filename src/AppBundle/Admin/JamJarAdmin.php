@@ -19,7 +19,7 @@ class JamJarAdmin extends Admin
         ))->add('year', 'entity', array(
             'class' => 'AppBundle\Entity\Year',
             'property' => 'name',
-        ))->add('comment', 'text');
+        ))->add('comment', 'text', array('required' => false));
 
         //if we crate object
         if (!($this->getSubject()->getId())) {

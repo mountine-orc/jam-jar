@@ -8,6 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Year
  *
  * @ORM\Table(name="year")
+ * @ORM\Entity
  */
 class Year
 {

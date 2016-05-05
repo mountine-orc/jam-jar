@@ -8,6 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Type
  *
  * @ORM\Table(name="type")
+ * @ORM\Entity
  */
 class Type
 {

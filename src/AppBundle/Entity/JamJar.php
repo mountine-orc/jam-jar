@@ -8,6 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * JamJar
  *
  * @ORM\Table(name="jam_jar")
+ * @ORM\Entity
  */
 class JamJar
 {
