@@ -1,0 +1,28 @@
+AppBundle\Entity\Type :
+    type_1:
+        name: Cherry
+    type_2:
+        name: Strawberry
+    type_3:
+        name: Raspberry
+    type_4:
+        name: Bilberry
+
+
+AppBundle\Entity\Year :
+    year_1:
+        name: 2010
+    year_2:
+        name: 2011
+    year_3:
+        name: 2012
+    year_4:
+        name: 2013
+    year_5:
+        name: 2014
+
+
+AppBundle\Entity\JamJar :
+    jam_jar_{1..20}:
+        type: "@type*"
+        year: "@year*"
