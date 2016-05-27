@@ -13,7 +13,7 @@ before_script:
   - php app/console hautelook_alice:doctrine:fixtures:load --no-debug -n
 
 script:
-  - phpunit
+  - phpunit -c app
 
 after_success:
   - ./bin/phpcs --standard=psr2 src
